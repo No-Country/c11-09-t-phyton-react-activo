@@ -7,6 +7,7 @@ import SendMoney from './pages/SendMoney'
 
 import Navbar from './components/Navbar'
 import Footer from './components/Footer';
+import Logeed from './pages/Logeed';
 function App() {
   return (
     <BrowserRouter>
@@ -14,6 +15,7 @@ function App() {
 
       <Routes>
           <Route path="/" element={<Index/>}></Route>
+          <Route path="/logeed" element={<Logeed/>}></Route>
           <Route path="/cards" element={<Cards/>}></Route>
           <Route path="/profile" element={<Profile/>}></Route>
           <Route path="/actividad" element={<Activities/>}></Route>
