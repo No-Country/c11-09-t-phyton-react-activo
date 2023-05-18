@@ -48,3 +48,26 @@
     
     
 }
+@media (min-width:700px){
+    .container-form {
+        margin-top: 4rem;
+    }
+    .formulario {
+        width: 25%;
+    }
+    .create-title {
+        font-size: 2rem;
+    }
+    .create-p {
+        font-size: 2rem;
+    }
+    .label {
+        font-size: 1.5rem;
+    }
+    .inputForm {
+        padding: 12px 0;
+    }
+    .buttonForm {
+        padding: 12px 0;
+    }
+}
