@@ -12,6 +12,8 @@ function LogIn() {
   return (
 
     <>
+    <div className='container-form'>
+
     <h2 className='create-title'>
       ¿Primera vez que ingresas?
     </h2>
@@ -29,6 +31,7 @@ function LogIn() {
       <button className='buttonForm button1' type="submit">continuar</button>
       <button className='buttonForm button2'  >Volver</button>
     </form>
+    </div>
     </>
   );
 }
