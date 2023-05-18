@@ -4,10 +4,13 @@ import Cards from './pages/Cards'
 import Profile from './pages/Profile'
 import Activities from './pages/Activities'
 import SendMoney from './pages/SendMoney'
-
 import Navbar from './components/Navbar'
 import Footer from './components/Footer';
 import Logeed from './pages/Logeed';
+import LogIn from './pages/LogIn';
+
+
+
 function App() {
   return (
     <BrowserRouter>
@@ -15,6 +18,7 @@ function App() {
 
       <Routes>
           <Route path="/" element={<Index/>}></Route>
+          <Route path="/logIn" element={<LogIn/>}></Route>
           <Route path="/logeed" element={<Logeed/>}></Route>
           <Route path="/cards" element={<Cards/>}></Route>
           <Route path="/profile" element={<Profile/>}></Route>
@@ -23,7 +27,9 @@ function App() {
 
       </Routes>
 
+
       <Footer/>
+      
     </BrowserRouter>
   )
 }
