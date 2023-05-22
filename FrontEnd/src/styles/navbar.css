@@ -21,13 +21,13 @@
     line-height: 3.516rem;
     
 }
-a:hover{
+.link-navbar:hover{
     border: 2px solid red;
     background: transparent;
     padding: 4px 8px;
 }
 
-.navbar_link > a{
+.navbar_link > .link-navbar{
     font-family: 'Times New Roman', Times, serif;
     font-weight: 400;
     font-size: 1.5rem;
@@ -36,3 +36,4 @@ a:hover{
     line-height: 1.758rem;
     transition:  250ms ease-in-out;
 }
+

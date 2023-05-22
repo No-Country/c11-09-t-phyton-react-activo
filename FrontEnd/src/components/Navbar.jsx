@@ -10,11 +10,11 @@ const Navbar = () => {
                 <h1>Logo</h1>
             </div>
             <ul className='navbar_link'>
-            <Link to="/">Inicio</Link>
-            <Link to="/cards">Tarjetas</Link>
-            <Link to="/profile">Perfil</Link>
-            <Link to="/actividad">Historial Crediticio</Link>
-            <Link to="/send-money">Enviar Dinero</Link>
+            <Link class="link-navbar" to="/">Inicio</Link>
+            <Link class="link-navbar" to="/cards">Tarjetas</Link>
+            <Link class="link-navbar" to="/profile">Perfil</Link>
+            <Link class="link-navbar" to="/actividad">Historial Crediticio</Link>
+            <Link class="link-navbar" to="/send-money">Enviar Dinero</Link>
 
             </ul>
 
