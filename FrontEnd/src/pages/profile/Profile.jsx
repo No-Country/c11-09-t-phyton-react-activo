@@ -1,16 +1,19 @@
-import React from 'react'
+import React,{ useContext } from 'react'
 import { Link } from 'react-router-dom'
 import profile_styles from '../../styles/profile.css'
 import profile_styles_helper from '../../styles/profile_repeats_helper.css'
+import  AuthContext  from '../../context/AuthContext'
 
 const Profile = () => {
+    let { user } = useContext(AuthContext)
+    
   return (
     <>
         <div className='profile-data'>   
                 <div className='container-profile'>
                     <div className='data'>
                         <div className='logo'></div>
-                        <h1 className='name'>Nombre</h1>
+                        <h1 className='name'>{user.username}</h1>
                     </div>
                 </div>
 

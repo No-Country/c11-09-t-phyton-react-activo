@@ -1,37 +1,35 @@
-import React, { useEffect, useState } from 'react'
+import React,{useContext} from 'react'
 import { Link } from 'react-router-dom'
+import AuthContext from '../context/AuthContext';
 import '../styles/navbar.css';
 
 const Navbar = () => {
-
-  const [bars, setBars] = useState(false)
-  const [dep, setDep] = useState(false)
-    
-  return (
+  let {user,logoutUser} = useContext(AuthContext);
+  return (  
     <nav className='navbar'>
 
             <div className='navbar_logo'>
                 <div className='logo logo1'>logo</div>
             </div>
+            { user ? <ul className='navbar_link'>
+            <Link className="link-navbar" to="/">Inicio</Link>
+            <Link className="link-navbar" to="/cards">Tarjetas</Link>
+            <Link className="link-navbar" to="/actividad">Historial Crediticio</Link>
+            <Link className="link-navbar" to="/send-money">Enviar Dinero</Link>
+            <Link className="link-navbar" to="/profile">{user.username}</Link>
+            <Link className="link-navbar" onClick={logoutUser}>Logout</Link>
+
+            </ul> : 
+             
             <ul className='navbar_link'>
-            <Link class="link-navbar" to="/">Inicio</Link>
-            <Link class="link-navbar" to="/cards">Tarjetas</Link>
-            <Link class="link-navbar" to="/profile">Perfil</Link>
-            <Link class="link-navbar" to="/actividad">Historial Crediticio</Link>
-            <Link class="link-navbar" to="/send-money">Enviar Dinero</Link>
+            <Link className="link-navbar" to="/">Inicio</Link>
+            <Link className="link-navbar" to="/login">Login</Link>
+            <Link className="link-navbar" to="/logup">Logup</Link>
 
-            </ul>
-            <button className="botton-bars" onClick={() => {setBars(!bars); setDep(!dep);}}><i className="fa-solid fa-bars"></i></button>
-            <span className={`navbar_link  ${bars ? "ocultar": ""} ${dep ? "dep" : ""} `}>
-            <Link className='nav-link' to="/">Inicio</Link>
-            <Link className='nav-link' to="/logIn">LogIn</Link>
-            <Link className='nav-link' to="/logeed">Logeed</Link>
-            <Link className='nav-link' to="/cards">Tarjetas</Link>
-            <Link className='nav-link' to="/profile">Perfil</Link>
-            <Link className='nav-link' to="/actividad">Historial</Link>
-            <Link className='nav-link' to="/send-money">Enviar Dinero</Link>
-
-            </span>
+            </ul> 
+            }
+           
+            
             
         </nav>
   )

@@ -1,10 +1,15 @@
 import data from '../../styles/data_profile.css'
+import  AuthContext  from '../../context/AuthContext'
+import React,{ useContext } from 'react'
+
 const DataProfile = () => {
+    let { user } = useContext(AuthContext)
+    console.log(user)
     return (
         <div className="container">
             <h1 className="my-data-title">Mis datos</h1>
             <div className="edit-logo">
-            <i class="fa-solid fa-pen-fancy icon"></i>         
+            <i className="fa-solid fa-pen-fancy icon"></i>         
             <p>editar</p>
             </div>
             <div className="data-content">
@@ -13,7 +18,7 @@ const DataProfile = () => {
                         <p>A</p>
                     </div>
                     <p className="field">Usuario</p>
-                    <p className="content">Pamasime</p>
+                    <p className="content">{user.username}</p>
 
                 </div>
                 <div className="user-data">
@@ -21,7 +26,7 @@ const DataProfile = () => {
                         <p>A</p>
                     </div>
                     <p className="field">E-mail</p>
-                    <p className="content">maximilianogonzalez@gmail.com</p>
+                    <p className="content">{user.email}</p>
 
                 </div>
                 <div className="user-data">
