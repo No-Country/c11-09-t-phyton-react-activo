@@ -1,13 +1,12 @@
-import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Page404 = () => {
-    return (
-        <div>
-            <h1>Pagina no disponible</h1>
-            <Link to="/">Volver a home </Link>
-        </div>
+    const navigate = useNavigate()
+    useEffect(()=> {
+        navigate("/")
+    })
 
-    )
 }
 
 export default Page404

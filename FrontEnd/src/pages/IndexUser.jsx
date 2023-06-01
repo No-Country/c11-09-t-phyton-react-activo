@@ -1,10 +1,10 @@
 import { useContext } from "react";
-import  AuthContext  from '../context/AuthContext'
+import  ProfileContext  from '../context/ProfileContext'
 const IndexUser = () => {
-    let { user } = useContext(AuthContext)
+    let { profile } = useContext(ProfileContext)
     return (
         <div>
-            <h1>Hola de nuevo {user.username} </h1>
+            <h1>Hola de nuevo {profile.username} </h1>
         </div>
         
     )

@@ -1,10 +1,14 @@
-import React,{useContext} from 'react'
+import React,{useContext, useReducer} from 'react'
 import { Link } from 'react-router-dom'
 import AuthContext from '../context/AuthContext';
+import ProfileContext from '../context/ProfileContext';
+
 import '../styles/navbar.css';
 
 const Navbar = () => {
-  let {user,logoutUser} = useContext(AuthContext);
+  let {logoutUser,user} = useContext(AuthContext);
+  let {profile} = useContext(ProfileContext);
+
   return (  
     <nav className='navbar'>
 
@@ -16,7 +20,7 @@ const Navbar = () => {
             <Link className="link-navbar" to="/cards">Tarjetas</Link>
             <Link className="link-navbar" to="/actividad">Historial Crediticio</Link>
             <Link className="link-navbar" to="/send-money">Enviar Dinero</Link>
-            <Link className="link-navbar" to="/profile">{user.username}</Link>
+            <Link className="link-navbar" to="/profile">{profile.username }</Link>
             <Link className="link-navbar" onClick={logoutUser}>Logout</Link>
 
             </ul> : 

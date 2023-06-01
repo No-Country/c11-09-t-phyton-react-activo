@@ -3,9 +3,13 @@ import IndexRouter from './router/IndexRouter'
 
 function App() {
   return (
-    <AuthProvider>
-      <IndexRouter/>
-    </AuthProvider>
+    <>
+        <AuthProvider>
+          <IndexRouter/>
+        </AuthProvider>
+    </>
+
+    
   )
 }
 
