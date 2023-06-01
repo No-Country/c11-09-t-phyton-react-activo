@@ -21,14 +21,16 @@ const FormEdit = () => {
     })
     
     const FormSubmit = handleSubmit(async data => {
+
         await updateProfile(profile.id,{
-            direccion: data.direction,
-            dni:data.dni,
-            telefono:data.phone,
             username: data.username,
             email: data.email,
+            dni:data.dni,
+            telefono:data.phone,
+            direccion: data.direction,
 
         })
+
         navigate("/profile/my-data")
 
     }) 
