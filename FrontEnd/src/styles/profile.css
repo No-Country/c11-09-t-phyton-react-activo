@@ -1,0 +1,47 @@
+.profile-data {
+    display:inline-block;
+
+    position:relative;
+    width:69rem;
+    height: 51.9rem;
+}
+
+
+
+.profile-data .container-profile .logo{
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background: #D9D9D9;
+}
+
+.profile-data .container-profile .name{
+    position: absolute;
+    left:45%;
+    top:23px;
+    border-radius: 50%;
+    text-align: center;
+    
+}
+
+.profile-data .container-data {
+    top:32%;
+    left:32.5%;
+}
+
+
+.profile-data .container-security {
+    top:48%;
+    left:32.5%;
+}
+
+.profile-data .container-directions{
+    top:64%;
+    left:32.5%;
+}
+
+.profile-data .container-communications{
+    top:80%;
+    left:32.5%;
+}

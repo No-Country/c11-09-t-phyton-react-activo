@@ -1,0 +1,39 @@
+.profile-data .data {
+    position: relative;
+}
+.profile-data .container-profile,.container-data
+,.container-security,.container-directions,
+.container-communications {
+    position: absolute;
+    top:10%;
+    left:31.2%;
+    width:300px;
+    height:100px;
+}
+
+.logo p {
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 36.4px;
+
+}
+
+.name {
+    position: absolute;
+    left:42%;
+    top:12px;
+    font-size:34px;
+}
+
+
+.logo {
+    position: relative;
+    width:72.8px;
+    height: 72.8px;
+    border-radius: 50%;
+    background: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
