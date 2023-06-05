@@ -63,14 +63,19 @@ margin-left:10px;
   padding:20px;
   background: black;
   color: white;
+  width: 780px;
   
-  border: none;
+  
+  border: 1px solid #ccc;
  
 }
 
 #transactions {
   background:black;
   color:white;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  width: 780px;
 }
 
 .categories {
@@ -81,7 +86,7 @@ padding: 0;
 background-color: black;
 border:3px, solid, pink;
 border-radius: 26px;
-width: 580px;
+width: 780px;
 height: 290px;
 padding: 20px;
 text-align: center;
@@ -158,15 +163,20 @@ border-bottom: none; /* Elimina la línea divisoria */
 #servicios,
 #gastosPorCategorias {
 margin-bottom: 0;
- /* Elimina el margen inferior */
+margin-top: 10px;
+width: 780px;
+
+ 
 }
 
 #transactions {
-background: none; /* Elimina el fondo */
+background: none; 
 color: white;
-border-bottom: none; /* Elimina la línea divisoria */
+border-bottom: none;
+width: 820px; 
 }
 
 .categories {
-border: none; /* Elimina el borde */
+border: none;
+width: 600px;
 }
