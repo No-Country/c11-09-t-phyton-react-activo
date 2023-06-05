@@ -14,10 +14,10 @@ background: black;
 margin-left:40px;
 }
 .tarjeta {
-background-color: rgb(187, 187, 54);
+background-color: rgb(82, 65, 1);
 border-radius: 26px;
 width: 375px;
-height: 175px;
+height: 215px;
 padding: 20px;
 text-align: center;
 margin-top:15px;
@@ -43,35 +43,41 @@ margin-left:10px;
 
 }
 
-#servicios {
-  margin-bottom: 20px;
-}
 
-#servicios h2 {
-  margin: 0;
+
+.servicios {
+list-style-type: none;
+border-radius: 26px;
+width: 780px;
+height: 290px;
+padding: 20px;
+text-align: center;
+background: black;
+
+}
+#servicio h2 {
+  margin: 10px;
   color:white;
-  background:black;
+ 
 }
 
-#servicios input[type="date"] {
+#servicio input[type="date"] {
   margin-bottom: 10px;
 }
 
-#transacciones,
+#transacciones,#servicios,
 #gastosPorCategorias {
   margin-top: 50px;
   padding:20px;
   background: black;
   color: white;
   width: 780px;
-  
-  
   border: 1px solid #ccc;
  
 }
 
 #transactions {
-  background:black;
+ 
   color:white;
   border: 1px solid #ccc;
   margin-top: 10px;
@@ -84,7 +90,6 @@ list-style-type: none;
 margin: 0;
 padding: 0;
 background-color: black;
-border:3px, solid, pink;
 border-radius: 26px;
 width: 780px;
 height: 290px;
@@ -102,16 +107,22 @@ border:none;
 
 .category {
 margin-right: 10px;
+padding:1px;
 }
 
 .amount {
 text-align: right;
 }
+
+#gastosPorCategorias, #servicio,#transactions {
+
+  background:#191414;
+
+}
 /* Estilos CSS para el encabezado */
 header {
   background-color: #191414;
   padding: 20px;
- 
   border-bottom: none;
 }
 
@@ -161,7 +172,7 @@ border-bottom: none; /* Elimina la línea divisoria */
 }
 
 #servicios,
-#gastosPorCategorias {
+#gastosPorCategorias, #transacciones {
 margin-bottom: 0;
 margin-top: 10px;
 width: 780px;
@@ -169,14 +180,42 @@ width: 780px;
  
 }
 
-#transactions {
-background: none; 
+#transacciones {
+background: #191414; 
 color: white;
 border-bottom: none;
-width: 820px; 
+
+
 }
+
+
 
 .categories {
 border: none;
 width: 600px;
+}
+
+#servicios {
+  
+    background: #191414;
+    color:white;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    width: 780px;
+    
+  
+}
+
+#servicios > ul {
+  height: 780px;
+}
+.icono {
+  width: 50px;
+  height: 50px;
+}
+
+.pago {
+  width: 500px;
+  padding: 20px;
+  border: 1px solid #ccc;
 }
