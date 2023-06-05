@@ -1,0 +1,172 @@
+
+body {
+background: rgba(60, 48, 48, 1);;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.contenedor {
+background: black;
+
+}
+
+.contenedor >h2 {
+margin-left:40px;
+}
+.tarjeta {
+background-color: rgb(187, 187, 54);
+border-radius: 26px;
+width: 375px;
+height: 175px;
+padding: 20px;
+text-align: center;
+margin-top:15px;
+margin-left:10px;
+}
+
+.tarjeta h3 {
+  color: black;
+}
+
+.boton {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+}
+.boton a {
+  text-decoration: none;
+  color:black;
+
+}
+
+#servicios {
+  margin-bottom: 20px;
+}
+
+#servicios h2 {
+  margin: 0;
+  color:white;
+  background:black;
+}
+
+#servicios input[type="date"] {
+  margin-bottom: 10px;
+}
+
+#transacciones,
+#gastosPorCategorias {
+  margin-top: 50px;
+  padding:20px;
+  background: black;
+  color: white;
+  
+  border: none;
+ 
+}
+
+#transactions {
+  background:black;
+  color:white;
+}
+
+.categories {
+
+list-style-type: none;
+margin: 0;
+padding: 0;
+background-color: black;
+border:3px, solid, pink;
+border-radius: 26px;
+width: 580px;
+height: 290px;
+padding: 20px;
+text-align: center;
+}
+
+
+.categories li {
+margin-bottom: 10px;
+display: flex;
+justify-content: space-between;
+border:none;
+}
+
+.category {
+margin-right: 10px;
+}
+
+.amount {
+text-align: right;
+}
+/* Estilos CSS para el encabezado */
+header {
+  background-color: #191414;
+  padding: 20px;
+ 
+  border-bottom: none;
+}
+
+.logo {
+  float: left;
+  font-size: 24px;
+  margin-left: 10px;
+  height:60px;
+  width:80px;
+}
+
+.logo >img {
+  height:100px;
+  width:130px;
+}
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height:90px;
+  overflow: hidden;
+}
+
+nav li {
+  float: right;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  font-size:large;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: gray;
+}
+/* Estilos CSS para el encabezado */
+header {
+background-color: #191414;
+padding: 20px;
+border-bottom: none; /* Elimina la línea divisoria */
+}
+
+#servicios,
+#gastosPorCategorias {
+margin-bottom: 0;
+ /* Elimina el margen inferior */
+}
+
+#transactions {
+background: none; /* Elimina el fondo */
+color: white;
+border-bottom: none; /* Elimina la línea divisoria */
+}
+
+.categories {
+border: none; /* Elimina el borde */
+}
