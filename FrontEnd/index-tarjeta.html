@@ -1,174 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tarjeta AAAA</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+<body>
+  <header>
+    <nav>
+     <div class="logo">
+     <img src="logo-final.png">
+     </div>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Mi perfil</a></li>
+        <li><a href="#">Tarjeta</a></li>
+        <li><a href="#">Enviar Dinero</a></li>
+      </ul>
+      
+    </nav>
+   
+  </header>
 
-body {
-background: rgba(60, 48, 48, 1);;
-  color: #ffffff;
-  font-family: Arial, sans-serif;
-}
+<div class="contenedor">
+ <h2> Visa </h2>
+  <div class="tarjeta">
+  <h2> Visa </h2>
+  <div class="cuadro">
+    <h2>Visa Express Banco Nación</h2>
+    <img src="#">
+      <h3>245367899000</h3>
+      <h3>08/27</h3>
+      <h3>345</h3>
+    
+      </div>
+</div>  
+ <div>
+  <button class="boton" id="showTransactions"><a href="#transactions">Transacciones</a></button>
+  <button class="boton" id="showExpensesByCategory"><a href="#gastosPorCategorias">Gastos por Categorias</a></button>
+  <button class="boton" id="showServicesAdhered"><a href="#servicio">Servicios Adheridos</a></button>
+  </div>
+ <div id="gastosPorCategorias">
+    
+   <h1>Categorías</h1>
+  <ul class="categories">
+    <li>
+      <span class="category">Café Hernandez</span>
+      <span class="amount">$10</span>
+    </li>
+    <li>
+      <span class="category">Tiendas de Mascotas</span>
+      <span class="amount">$20</span>
+    </li>
+    <li>
+      <span class="category">Peluqueria</span>
+      <span class="amount">$15</span>
+    </li>
+    <li>
+      <span class="category">Libros</span>
+      <span class="amount">$25</span>
+    </li>
+    <li>
+      <span class="category">Plantas</span>
+      <span class="amount">$12</span>
+    </li>
+    <li>
+      <span class="category">Ferreteria</span>
+      <span class="amount">$18</span>
+    </li>
+  </ul>
+  </div>
 
-.contenedor {
-background: black;
 
-}
 
-.contenedor >h2 {
-margin-left:40px;
-}
-.tarjeta {
-background-color: rgb(187, 187, 54);
-border-radius: 26px;
-width: 375px;
-height: 175px;
-padding: 20px;
-text-align: center;
-margin-top:15px;
-margin-left:10px;
-}
+  <div id="transactions">
+  <h1>Transacciones</h1>
+    <h2>Saldo: $30000
+    </h2>
+    <h2>Cobros</h2>
+    Servicios a Empresa XPT :$45000
+    
 
-.tarjeta h3 {
-  color: black;
-}
+    <h2>Pagos</h2>
+    Swiss Medical:$10000 </br></br> 
+    Supermercado Jumbo: $5000.
+  
+  </div>
+  <hr>
+  <hr>
+  <div id="servicio">
+    <img src="swiss_medical.png" alt="Swiss Medical" class="icono">
+    <h2>Swiss Medical</h2>
+    <div id="fecha" name="fecha">
+      <h3>
+    Próximo Vencimiento: 15/06/2023</h3></br></br>
+    </div></br></br>
+    
+  <form action="pago.php" method="post" class="pago">
+    <h2>Pago con Tarjeta</h2>
+    <label for="tarjeta">Número de Tarjeta:</label>
+    <input type="text" id="tarjeta" name="tarjeta" required>
+    <label for="fecha">Fecha de Vencimiento:</label>
+    <input type="date" id="fecha" name="fecha" required></br></br>
+    <button type="submit" value="Pagar"><h2>Pagar</h2></button>
+  </form>
+  </div>
 
-.boton {
-  background-color: #007bff;
-  color: #ffffff;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  margin: 10px;
-  font-size: 16px;
-}
-.boton a {
-  text-decoration: none;
-  color:black;
+  <div id="servicio">
+    <img src="personal_flow.png" alt="Personal Flow" class="icono">
+    <div id="fecha" name="fecha">
+    Próximo Vencimiento: 18/06/2023</br></br>
+    <h2>Personal Flow</h2>
+      <div id="fecha" name="fecha">
+      <h3>
+    Próximo Vencimiento: 18/06/2023</h3></br></br>
+    </div>
+    
+  </div>
 
-}
-
-#servicios {
+  <form action="pago.php" method="post" class="pago">
+    <h2>Pago con Tarjeta</h2>
+    <label for="tarjeta">Número de Tarjeta:</label>
+    <input type="text" id="tarjeta" name="tarjeta" required>
+    <label for="fecha">Fecha de Vencimiento:</label>
+    <input type="date" id="fecha" name="fecha" required></br></br>
+    <button type="submit" value="Pagar"><h2>Pagar</h2></button>
+  </form>
+  <style>
+  body {
+    background-color: rgba(25, 20, 20, 1);
+    color:white;
+  }
+  #servicio {
+  width: 580px;
+  padding: 20px;
+  border: 1px solid #ccc;
   margin-bottom: 20px;
 }
 
-#servicios h2 {
-  margin: 0;
-  color:white;
-  background:black;
+.icono {
+  width: 50px;
+  height: 50px;
 }
 
-#servicios input[type="date"] {
-  margin-bottom: 10px;
-}
-
-#transacciones,
-#gastosPorCategorias {
-  margin-top: 50px;
-  padding:20px;
-  background: black;
-  color: white;
-  
-  
-  border: 1px solid #ccc;
- 
-}
-
-#transactions {
-  background:black;
-  color:white;
-  border: 1px solid #ccc;
-}
-
-.categories {
-
-list-style-type: none;
-margin: 0;
-padding: 0;
-background-color: black;
-border:3px, solid, pink;
-border-radius: 26px;
-width: 380px;
-height: 290px;
-padding: 20px;
-text-align: center;
-}
-
-
-.categories li {
-margin-bottom: 10px;
-display: flex;
-justify-content: space-between;
-border:none;
-}
-
-.category {
-margin-right: 10px;
-}
-
-.amount {
-text-align: right;
-}
-/* Estilos CSS para el encabezado */
-header {
-  background-color: #191414;
+.pago {
+  width: 500px;
   padding: 20px;
- 
-  border-bottom: none;
+  border: 1px solid #ccc;
 }
+form {
+      display: flex;
+      margin-left:3px;
+      margin-right:5px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 100px;
+      width:480px;
+    }
 
-.logo {
-  float: left;
-  font-size: 24px;
-  margin-left: 10px;
-  height:60px;
-  width:80px;
-}
+    label {
+      color: #A87AF2;
+      margin-bottom: 10px;
+    }
 
-.logo >img {
-  height:100px;
-  width:130px;
-}
+    input[type="text"],
+    input[type="number"],
+    select {
+      height: 38px;
+      width: 200px;
+      border-radius: 26px;
+    }
+
+    button[type="submit"] {
+      height: 48px;
+      width: 280px;
+      border-radius: 36px;
+      background-color: #A87AF2;
+      color: rgb(241, 232, 211);
+      cursor: pointer;
+     text-align:center;
+    }
+</style>
 
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  height:90px;
-  overflow: hidden;
-}
-
-nav li {
-  float: right;
-}
-
-nav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  font-size:large;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-nav li a:hover {
-  background-color: gray;
-}
-/* Estilos CSS para el encabezado */
-header {
-background-color: #191414;
-padding: 20px;
-border-bottom: none; /* Elimina la línea divisoria */
-}
-
-#servicios,
-#gastosPorCategorias {
-margin-bottom: 0;
- /* Elimina el margen inferior */
-}
-
-#transactions {
-background: none; /* Elimina el fondo */
-color: white;
-border-bottom: none; /* Elimina la línea divisoria */
-}
-
-.categories {
-border: none; /* Elimina el borde */
-}
+</body>
+</html>
