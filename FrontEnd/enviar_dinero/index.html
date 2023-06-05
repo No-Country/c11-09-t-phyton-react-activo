@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ver-transacciones-tarjeta</title>
+  <link rel="stylesheet" a="estilo.css">
+</head>
+<body>
+  <form>
+    <label for="alias"><h1>Alias del destinatario:</h1></label>
+    <input type="text" id="alias" name="alias" required><br><br>
+
+    <label for="importe"><h1>Importe:</h1></label>
+    <input type="number" id="importe" name="importe" value="$0" required><br><br>
+
+    <label for="motivo"><h1>Motivo:</h1></label>
+    <select id="motivo" name="motivo" required>
+      <option value="varios">Varios</option>
+      <option value="aportes">Aportes de capital</option>
+      <option value="compra">Compra</option>
+      <option value="mensualidad">Mensualidad</option>
+    </select><br><br></br>
+
+    <button type="submit"><h1>Enviar</h1></button>
+  </form>
+  <style>
+    body {
+      background-color: #191414;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 100px;
+    }
+
+    label {
+      color: #A87AF2;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select {
+      height: 58px;
+      width: 580px;
+      border-radius: 26px;
+    }
+
+    button[type="submit"] {
+      height: 58px;
+      width: 580px;
+      border-radius: 26px;
+      background-color: #A87AF2;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+
+
+  
+</body>
+</html>
+
