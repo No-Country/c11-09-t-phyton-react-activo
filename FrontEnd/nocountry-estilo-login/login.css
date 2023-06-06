@@ -1,0 +1,34 @@
+body {
+    background-color: rgb(5, 5, 5);
+    justify-content: center;
+}
+
+h2 {
+    color: white;
+}
+input {
+        height: 58px;
+        width: 600px;
+        left: 62px;
+        top: 515px;
+        border-radius: 26px;
+        border-color: rgb(228, 3, 176);
+        color:black;
+
+}
+
+.button {
+    border: 2px, rgb(241, 5, 147);
+    background-color:  #cf6bd5;
+    box-shadow: #370126;
+    height: 58px;
+    width: 600px;
+    left: 62px;
+    top: 797px;
+    border-radius: 26px;
+
+}
+        
+.button  hover {
+    border: 2px, rgb(46, 1, 54); 
+}
