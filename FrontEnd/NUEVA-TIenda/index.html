@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tienda de Productos</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #E5E5E5;
+  
+}
+.red-bar {
+  height: 130px;
+  width: 1440px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+  background: rgba(255, 0, 0, 1);
+}
+.logo > img {
+ height: 123px;
+ width: 123px;
+ margin-left: 6px;
+ top: -3px;
+ border-radius: 0px;
+
+}
+
+.logo {
+  margin-right:1280px;
+}
+
+h1 {
+  color: black; /* Inserta tu color preferido aquí */
+}
+
+.product {
+  width: 480px;
+  height:480px;  
+  border: 1px solid purple; /* Inserta tu color preferido aquí */
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.product >p {
+    font-size: larger;
+    font: Helvetica-Neue;
+}
+.product img {
+ 
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.payment-options {
+  margin-top: 10px;
+}
+
+
+  a {
+  text-decoration: none;
+  margin-right: 10px;
+  color: black;
+  font-size: bold;
+}
+ 
+ .container {
+    box-size:border-box;
+    display:inline-flex;
+    flex-direction:row;
+    padding: 5px;
+    margin-top: 10px; 
+}
+
+
+
+.bar {
+  box-size: border-box;
+  height: 45px;
+  width: 747px;
+  display: flex;
+  flex-direction: row;
+  float: center;
+  list-decoration: none;
+}
+.bar>ul {
+  text-decoration: none;
+}
+.bar ul {
+  display: flex;
+  flex-direction: row; /* Alinea los elementos en una línea horizontal */
+  list-style: none;
+  padding: 0;
+}
+
+.bar ul li {
+  margin-right: 10px; /* Ajusta el espacio entre los elementos de la lista */
+  text-alig: center;
+  align-items: center;
+
+
+}
+
+.bar ul li:last-child {
+  margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
+
+.bar > h3 {
+  font-family: Inter;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+
+  background: rgba(0, 0, 0, 1);
+  
+}
+
+.sectores {
+ 
+  display: flex;
+  justify-content: center;
+
+}
+
+.productos {
+  
+  display: flex;
+  flex-direction: row; /* Alinea los elementos en una línea horizontal */
+  list-style: none;
+  padding: 12px;
+  margin-right: 20px;
+  margin-left: 40px;
+
+
+}
+
+.productos {
+  
+  display: flex;
+  flex-direction: row; /* Alinea los elementos en una línea horizontal */
+  list-style: none;
+  padding: 12px;
+  margin-left: 10px;
+  
+
+}
+
+#info {
+  display:flex;
+ 
+
+}
+.foto-producto {
+  width: 200px;
+  margin-left:18px;
+  margin-left:65px;
+  margin-right:35px;
+}
+.foto-producto img {
+  height: 230px;
+  width: 190px;
+  margin-left: 20px;
+  margin-top: 30px;
+  border-radius: 0px;
+
+}
+
+span {
+  color: rgba(235, 0, 27, 1);
+
+}
+
+
+
+.boton-pago  {
+  display: flex;
+  align-items: center;
+  height: 62px;
+  width: 278px;
+  border-radius: 20px;
+  background: rgba(25, 20, 20, 1);
+
+}
+
+.boton-pago >a {
+    color: white;
+}
+
+.boton-pago img {
+  width: 150px; /* Cambia este valor según tus necesidades */
+  height: auto;
+  margin-right: 10px; /* Ajusta el margen según tus preferencias */
+  margin-bottom: 25px;
+}
+
+
+</style>
+<body>
+<header>
+    <nav class= "red-bar">
+     <div class="logo">
+     <img src="img/dexter.png">
+     </div>
+     
+      
+    </nav>
+
+<section class="sectores">
+  <nav class="bar">
+    <ul>
+        <li><a href="#"><h3>Categorias</h3></a></li>
+        <li><a href="#"><h3>Mujer</h3></a></li>
+        <li><a href="#"><h3>Marcas</h3></a></li>
+        <li><a href="#"><h3>Zapatillas</h3></a></li>
+        <li><a href="#"><h3>Liquidación</h3></a></li>
+
+      </ul>
+  </nav>
+</section>  
+      
+</header>
+<div class="productos">
+  <div class="foto-producto">
+      <img src="img/zapatilla1.jpeg" alt="Zapatillas ">
+      <h2>Nike Waffle</h2>
+      <p>170 USD</p>
+      <br>
+    <p> <h3><span>3 cuotas de 33 USD </h3></p> 
+    <section class="pago">
+    <button class="boton-pago">
+    <a href=""><h4>Pagar con </h4></a>
+    <img src="img/logo-final.png">
+    </button>
+    </section>
+  </div>
+ 
+<div class="foto-producto">
+      <img src="img/zapatilla3.jpeg" alt="Zapatillas ">
+      <h2>Nike Waffle</h2>
+      <p>170 USD</p>
+      <br>
+    <p> <h3><span>3 cuotas de 33 USD </span></h3></p>
+    <section class="pago">
+    <button class="boton-pago">
+    <a href=""><h4>Pagar con </h4></a>
+    <img src="img/logo-final.png">
+    </button>
+    </section>
+    </div>
+
+  <div class="foto-producto">
+      <img src="img/zapatilla4.jpeg" alt="Zapatillas ">
+      <h2>Nike Waffle</h2>
+      <p>170 USD</p>
+      <br>
+    <p> <h3><span>3 cuotas de 33 USD </h3></p>
+    <section class="pago">
+    <button class="boton-pago">
+    <a href=""><h4>Pagar con </h4></a>
+    <img src="img/logo-final.png">
+    </button>
+    </section>
+    
+  </div>
+
+  <div class="foto-producto">
+      <img src="img/zapatilla5.jpeg" alt="Zapatillas ">
+      <h2>Nike Waffle</h2>
+      <p>170 USD</p>
+      <br>
+    <p> <h3><span>3 cuotas de 33 USD </h3></p>
+    <section class="pago">
+    <button class="boton-pago">
+    <a href=""><h4>Pagar con </h4></a>
+    <img src="img/logo-final.png">
+    </button>
+    </section>
+    
+  </div>
+</div>
+
+<div class="productos">  
+ <div class="foto-producto">
+      <img src="img/zapatilla6.jpeg" alt="Zapatillas ">
+      <h2>Nike Waffle</h2>
+      <p>170 USD</p>
+      <br>
+    <p> <h3><span>3 cuotas de 33 USD </h3></p>
+    <section class="pago">
+    <button class="boton-pago">
+    <a href=""><h4>Pagar con </h4></a>
+    <img src="img/logo-final.png">
+    </button>
+    </section>
+    </div>
+
+  <div class="foto-producto">
+      <img src="img/zapatilla7.jpeg" alt="Zapatillas ">
+      <h2>Nike Waffle</h2>
+      <p>170 USD</p>
+      <br>
+    <p> <h3><span>3 cuotas de 33 USD </span> </h3></p>
+    <section class="pago">
+    <button class="boton-pago">
+    <a href=""><h4>Pagar con </h4></a>
+    <img src="img/logo-final.png">
+    </button>
+    </section>
+  </div>  
+    
+  <div class="foto-producto">
+      <img src="img/zapatilla8.jpeg" alt="Zapatillas ">
+      <h2>Nike Waffle</h2>
+      <p>170 USD</p>
+      <br>
+  <p> <h3><span>3 cuotas de 33 USD </h3></p>
+  <section class="pago">
+    <button class="boton-pago">
+    <a href=""><h4>Pagar con </h4></a>
+    <img src="img/logo-final.png">
+    </button>
+    </section>
+  </div>
+
+  <div class="foto-producto">
+      <img src="img/zapatilla2.jpeg" alt="Zapatillas ">
+      <h2>Nike Waffle</h2>
+      <p>170 USD</p>
+      <br>
+    <p> <h3><span>3 cuotas de 33 USD</span> </h3></p>
+    <section class="pago">
+    <button class="boton-pago">
+    <a href=""><h4>Pagar con </h4></a>
+    <img src="img/logo-final.png">
+    </button>
+    </section>
+    </div>
+
+</div>  
+    
+  </div>
+  </div> 
+
+  
+   <br>
+   
+</div>
+    
+  
+ 
+
+    
+       
+  
+ 
+    
+  </div>
+ 
+
+  
+
+  
+        
+        
+  </div>
+</div>
+</body>
+</html>
+
+
+
