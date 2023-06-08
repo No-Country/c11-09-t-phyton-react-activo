@@ -1,17 +1,20 @@
-import { Outlet } from "react-router-dom"
+import { Outlet, useLocation } from "react-router-dom"
 import Navbar from "../components/Navbar"
 import { ProfileProvider } from "../context/ProfileContext";
 
 const LayoutElement = () => {
+    let location = useLocation()
     return (
-        <div>
-            <div>
-                    <ProfileProvider>
-                        <Navbar />
-                        <Outlet/>
-                    </ProfileProvider>
-            </div>
-        </div>
+        <ProfileProvider>
+                {['/logup','/login'].includes(location.pathname) == false ?
+                <>
+                    <Navbar />
+                    <Outlet/>
+                </>
+                :
+                <Outlet/>
+                }
+        </ProfileProvider>
     )
 }
 

@@ -12,8 +12,7 @@ const Profile = () => {
         <div className='profile-data'>   
                 <div className='container-profile'>
                     <div className='data'>
-                        <div className='logo'></div>
-                        <h1 className='name'>{profile.username}</h1>
+                        <h1 className='name'>Tu Perfil  {profile.username}</h1>
                     </div>
                 </div>
 
@@ -31,11 +30,19 @@ const Profile = () => {
                         <div className='logo'>
                             <p>A</p>
                         </div>
-                        <p className='name'><Link to="card">Tu targeta de credito</Link></p>
+                        <p className='name'><Link to="credit">Tu targeta de credito</Link></p>
 
                     </div>
                 </div>
-               
+                <div className='container-directions'>
+                    <div className='data'>
+                        <div className='logo'>
+                            <p>A</p>
+                        </div>
+                        <p className='name'><Link to="debit">Tu targeta de debito</Link></p>
+
+                    </div>
+                </div>
             </div>
             
     </>

@@ -1,73 +1,121 @@
-.formulario {
 
-    width: 90%;
-    margin: auto;
-    margin-top: 1rem;
-    
-    display: flex;
-    flex-direction: column;
+.container-logup {
+    background:#191414;
+    width:50%;
+    height:67.3rem;
+    position:relative;
 }
-
-
-.create-title{
-    text-align: center;
-    margin: 1.7rem 3rem;
-    margin-bottom: 1rem;
-}
-.create-p {
-    text-align: center;
-    font-size: 1.4rem
+.header-lg {
+    width:100%;
+    height:30%;
 }
 
-.inputForm {
-    padding: 10px 0;
-    border-radius: 10px;
-    border: 1px solid rgb(130, 126, 126);
-    margin-top: 0.6rem;
-    margin-bottom: 1rem;
-    width: 100%;
+.header-lg .logo {
+    position: absolute;
+    left: 333px;
+    top: 95px;
+    width:335px;
+    height:52px;
+    color:inherit;
+    border-radius:inherit;
+    background-color:inherit;
 }
 
-.buttonForm {
-    padding: 10px;
-    border-radius: 10px;
+.header-lg .help-user {
+    position: absolute; 
+    left: 350px;
+    top: 248px;
+    font-size: 34px;
+    color: #FFFFFF;
+
+}
+.message-one{
+    position: absolute; 
+    left: 390px;
+    top: 328px;
+    font-size: 34px;
+    color: #FFFFFF;
+}
+.message-two{
+    position: absolute; 
+    left: 340px;
+    top: 398px;
+    font-size: 24px;
+    color: #A87AF2;
+}
+.logup-form {
+    width:100%;
+    height:50%;  
+    display:flex;
+    justify-content:center
+
+}
+
+.logup-form .form-group {
+    margin-top:4em;
+
+}
+
+.logup-form .form-group input {
+    width: 600px;
+    height: 53px;
+    border-radius: 20px;
+    border: 1px solid #757575;
+    padding-left: 20px;
+    padding: 30px;
+
+}
+
+.logup-button,.comeback-button {
+    margin-top:2em;
+    position: absolute;
+    width: 600px;
+    height: 74px;
+    background: #A87AF2;
+    border-radius: 26px;
+    font-size: 30px;
+    color: #FFFFFF;
+    font-weight: 0;
+    left: 22%;
+    text-align:center;
+
+}
+.comeback-button{
+    background: #FFFFFF;    
+    margin-top: 5em;
+    color: #A87AF2;
     
 }
-.button1{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    background-color: rgb(80, 170, 80);
-    color: white;
-    font-size: 1.3rem;
+.container-image {
+    position: absolute;
+    background-image: url('../assets/logup-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+    top: 0px;
+    left: 50%;
+    width:50%;
+    height: 100%;
 }
-.button2{
-    
-    margin-bottom: 2rem;
-    font-size: 1.3rem;
-    background-color: rgb(236, 234, 224);
-    
-    
+
+.problems {
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 24px;
+    top:85%;
 }
-@media (min-width:700px){
-    .container-form {
-        margin-top: 4rem;
-    }
-    .formulario {
-        width: 25%;
-    }
-    .create-title {
-        font-size: 2rem;
-    }
-    .create-p {
-        font-size: 2rem;
-    }
-    .label {
-        font-size: 1.5rem;
-    }
-    .inputForm {
-        padding: 12px 0;
-    }
-    .buttonForm {
-        padding: 12px 0;
-    }
+
+.no-account {
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 24px;
+    top:90%;
+}
+
+.create-account {
+    position: absolute;
+    color: #A87AF2  ;
+    font-size: 24px;
+    top:90%;
+    left:61%
 }

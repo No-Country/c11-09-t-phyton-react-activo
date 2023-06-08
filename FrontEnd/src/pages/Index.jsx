@@ -4,7 +4,7 @@ const Index = () => {
     return (
         <div>
             <h1>Wowllet</h1>
-            <Link to="login">Login</Link>
+            <Link style={{'color':'white'}} to="login">Login</Link>
         </div>
         
     )

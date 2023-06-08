@@ -1,6 +1,6 @@
 :root {
-  --bg--navbar: #D9D9D9;
-
+  background-color:#191414  ;
+  color:white;
 }
 *{
   margin: 0;

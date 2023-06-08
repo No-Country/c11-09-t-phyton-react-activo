@@ -2,6 +2,7 @@ import React,{useContext, useReducer} from 'react'
 import { Link } from 'react-router-dom'
 import AuthContext from '../context/AuthContext';
 import ProfileContext from '../context/ProfileContext';
+import Logo from '../assets/logo.png'
 
 import '../styles/navbar.css';
 
@@ -13,14 +14,13 @@ const Navbar = () => {
     <nav className='navbar'>
 
             <div className='navbar_logo'>
-                <div className='logo logo1'>logo</div>
+                <img  className='logo' src={Logo} alt='Logo de wowlet'/>
             </div>
             { user ? <ul className='navbar_link'>
             <Link className="link-navbar" to="/">Inicio</Link>
-            <Link className="link-navbar" to="/cards">Tarjetas</Link>
+            <Link className="link-navbar" to="/profile">{profile.username}</Link>
             <Link className="link-navbar" to="/actividad">Historial Crediticio</Link>
             <Link className="link-navbar" to="/send-money">Enviar Dinero</Link>
-            <Link className="link-navbar" to="/profile">{profile.username }</Link>
             <Link className="link-navbar" onClick={logoutUser}>Logout</Link>
 
             </ul> : 

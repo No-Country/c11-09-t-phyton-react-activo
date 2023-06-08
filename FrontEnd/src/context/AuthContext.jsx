@@ -12,7 +12,7 @@ export const AuthProvider = ({children}) => {
     let [loading, setLoading] = useState(true)
 
 
-    let loginUser = async (e )=> {
+    let loginUser = async (e)=> {
         e.preventDefault()
         let response = await fetch('http://localhost:8000/api/token/', {
             method:'POST',

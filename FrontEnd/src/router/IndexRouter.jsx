@@ -2,7 +2,8 @@ import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 import Index from '../pages/Index'
 import IndexUser from '../pages/IndexUser'
 
-import Cards from '../pages/Cards'
+import AddCreditCard from '../pages/card/AddCard'
+import CardCredit from '../pages/card/CardCredit';
 
 import Profile from '../pages/profile/Profile'
 import DataProfile from '../pages/profile/DataProfile'
@@ -17,6 +18,8 @@ import {useContext} from 'react'
 import AuthContext from '../context/AuthContext';
 import FormEdit from '../pages/profile/FormEdit';
 import LayoutElement from '../pages/LayoutElement';
+import AddDebitCard from '../pages/card/AddDebit';
+import CardDebit from '../pages/card/CardDebit';
 
 function IndexRouter() {
   let {user} = useContext(AuthContext)
@@ -32,7 +35,10 @@ function IndexRouter() {
                 <Route path="/" element={<IndexUser />} />
                 <Route path="profile">
                   <Route path="" element={ <Profile />} />
-                  <Route path="card" element={<Cards />} />
+                  <Route path="credit" element={<CardCredit />} />
+                  <Route path="debit" element={<CardDebit />} />
+                  <Route path="add-credit" element={<AddCreditCard />} />
+                  <Route path="add-debit" element={<AddDebitCard />} />
                   <Route path="my-data" element={ <DataProfile />}/>
                   <Route path="security" element={<Security/>} />   
                   <Route path="my-data/update" element={<FormEdit /> } />          
