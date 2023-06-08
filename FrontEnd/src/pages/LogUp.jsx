@@ -50,7 +50,7 @@ function LogUp() {
                
             </div>
         </div>
-        <div className='container-image'>
+        <div className='container-image-triangulo'>
 
         </div>
     </div>
