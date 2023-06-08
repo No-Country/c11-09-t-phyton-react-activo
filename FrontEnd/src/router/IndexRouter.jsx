@@ -32,7 +32,7 @@ function IndexRouter() {
               <>
                 <Route path="/actividad" element={<Activities />} />
                 <Route path="/send-money" element={<SendMoney />} />
-                <Route path="/" element={<IndexUser />} />
+                <Route path="/home" element={<IndexUser />} />
                 <Route path="profile">
                   <Route path="" element={ <Profile />} />
                   <Route path="credit" element={<CardCredit />} />
@@ -49,8 +49,7 @@ function IndexRouter() {
             ) : (
               <>
                 <Route path="/logup" element={<LogUp />} />
-                <Route path="/login" element={<LogIn />} />
-                <Route path="/" element={<Index />} />
+                <Route path="/" element={<LogIn />} />
                 <Route path="*" element={<Page404 />} />
               </>
             )}
