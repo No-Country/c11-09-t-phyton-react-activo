@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "corsheaders",
     'profile_api',
     'card',
+    'transaccion',
 ]
 
 
