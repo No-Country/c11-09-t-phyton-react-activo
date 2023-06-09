@@ -12,34 +12,37 @@ const Profile = () => {
         <div className='profile-data'>   
                 <div className='container-profile'>
                     <div className='data'>
-                        <h1 className='name'>Tu Perfil  {profile.username}</h1>
+                        <h1 className='name'>Tu Perfil</h1>
                     </div>
                 </div>
 
                 <div className='container-data'>
                     <div className='data'>
                         <div className='logo'>
-                            <p>A</p>
+                            <p>D</p>
                         </div>
-                        <p className='name'><Link to="my-data">Mis Datos</Link></p>
+                        <p className='name'><Link className='link-name' to="my-data">Mis Datos</Link></p>
+                        <p className='content'>principales asociados</p>
                     </div>
                 </div>
 
                 <div className='container-security'>
                     <div className='data'>
                         <div className='logo'>
-                            <p>A</p>
+                            <p>C</p>
                         </div>
-                        <p className='name'><Link to="credit">Tu targeta de credito</Link></p>
+                        <p className='name'><Link className='link-name' to="credit">Tu tarjeta de credito</Link></p>
+                        <p className='content'>De la cuenta</p>
 
                     </div>
                 </div>
                 <div className='container-directions'>
                     <div className='data'>
                         <div className='logo'>
-                            <p>A</p>
+                            <p>D</p>
                         </div>
-                        <p className='name'><Link to="debit">Tu targeta de debito</Link></p>
+                        <p className='name'><Link className='link-name' to="debit">Tu tarjeta de debito</Link></p>
+                        <p className='content'>De la cuenta</p>
 
                     </div>
                 </div>

@@ -1,0 +1,52 @@
+.transferir {
+    font-size: 34px;
+    text-align: center;
+    margin-top: 2.5em;
+}
+
+.form {
+    position: relative;
+    display:flex;
+    justify-content: center;
+    margin-top:5em;
+}
+
+.form .form-send_money {
+    position: relative;
+    width: 50%;
+    height: 500px;
+
+}
+
+.form .form-send_money .form-group  {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:100px;
+}
+
+.form-send_money .form-group input,input:focus{
+    width:70%;
+    border: none;
+    background-color:transparent;
+    outline: none;
+    border-bottom: 3.67px solid #A87AF2;
+    padding-bottom: 10px;
+    color: #fff;
+    font-size: 24.3731px;
+
+}
+
+.form .form-send_money .send_money_buttom {
+    position:absolute;
+    bottom:-100px;
+    left:340px;
+    width: 345px;
+    height: 87px;
+    background: #A87AF2;
+    border-radius: 26px;
+    font-size: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}

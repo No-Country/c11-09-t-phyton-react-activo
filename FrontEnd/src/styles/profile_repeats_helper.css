@@ -23,15 +23,21 @@
     left:42%;
     top:12px;
     font-size:34px;
+    white-space: nowrap;
+}
+
+.link-name {
+    color: #FFFFFF;
+
 }
 
 
-.logo {
+.data .logo {
     position: relative;
     width:72.8px;
     height: 72.8px;
     border-radius: 50%;
-    background: #D9D9D9;
+    background-image: url("../assets/profile_avatar.png");
     display: flex;
     justify-content: center;
     align-items: center;

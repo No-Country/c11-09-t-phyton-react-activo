@@ -33,3 +33,14 @@ export function getDebitCardApi(authTokens){
     })
 
 }
+
+export function getTransaction(id,authTokens){
+    return axios.get(`http://localhost:8000/api-transaccion/v1/transferencia/${id}/`,{
+        method: 'GET',
+        headers:{
+            'Content-Type': 'application/json',
+            'Authorization':'Bearer ' + String(authTokens.access),
+        },
+    })
+
+}

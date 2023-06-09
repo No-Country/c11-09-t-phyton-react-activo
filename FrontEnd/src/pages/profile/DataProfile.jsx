@@ -12,26 +12,25 @@ const DataProfile = () => {
     }
     return (
         <div>
-            <div className="container">
-                <h1 className="my-data-title">Mis datos</h1>
-                
+            <div className="container">                
                 <div className="edit-logo" onClick={handleUpdate}>
-                    <i className="fa-solid fa-pen-fancy icon"></i>         
-                    <p >editar</p> 
+                    <div className="icon">
+                        </div>         
+                    <p style={{'color':'#A87AF2','font-size':'24px'}}>Editar</p> 
                 </div>
             </div>
                 <div className="data-content">
                     <div className="user-data">
                         <div className="log">
-                            <p>A</p>
+                            <p>U</p>
                         </div>
-                        <p className="field">Nombre</p>
+                        <p className="field">Usuario</p>
                         <p className="content">{profile.username}</p>
 
                     </div>
                     <div className="user-data">
                         <div className="log">
-                            <p>A</p>
+                            <p>E</p>
                         </div>
                         <p className="field">E-mail</p>
                         <p className="content">{profile.email }</p>
@@ -39,7 +38,7 @@ const DataProfile = () => {
                     </div>
                     <div className="user-data">
                         <div className="log">
-                            <p>A</p>
+                            <p>D</p>
                         </div>
                         <p className="field">Direccion</p>
                         <p className="content">{profile.direccion || "Ninguno"}</p>
@@ -47,7 +46,7 @@ const DataProfile = () => {
                     </div>
                     <div className="user-data">
                         <div className="log">
-                            <p>A</p>
+                            <p>D</p>
                         </div>
                         <p className="field">DNI</p>
                         <p className="content">{profile.dni || "Ninguno"}</p>
@@ -55,7 +54,7 @@ const DataProfile = () => {
                     </div>
                     <div className="user-data">
                         <div className="log">
-                            <p>A</p>
+                            <p>T</p>
                         </div>
                         <p className="field">Teléfono</p>
                         <p className="content">{profile.telefono || "Ninguno"}</p>

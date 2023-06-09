@@ -7,7 +7,14 @@
 }
 
 
-
+.data .content {
+    font-size: 24px;
+    top:40px;
+    margin-top:30px;
+    left: 120px;
+    white-space: nowrap;
+    margin-bottom:1em;
+}
 
 .profile-data .container-profile .name{
     position: absolute;
@@ -17,6 +24,7 @@
     text-align: center;
     width: auto;
     white-space: nowrap;
+    font-size: 36px;
     
 }
 

@@ -25,7 +25,6 @@ const AddCreditCard = () => {
 
     const pushNameTitle = async (data) => {
         let data_creditcard = await response_credit()
-
          let response = await fetch(`http://localhost:8000/api-cards/v1/credit-update/${data_creditcard.id}`,{
             method: 'PUT',
             headers:{

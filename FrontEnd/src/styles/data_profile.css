@@ -2,12 +2,6 @@
     position: relative;
 }
 
-.container .my-data-title {
-    position:absolute;
-    top: 100px;
-    left:10%;
-}
-
 .edit-logo {
     position:absolute;
     top: 80px;
@@ -15,26 +9,32 @@
     width:80px;
     height:80px;
     border-radius:50%;
-    background-color:rgb(11, 151, 11);
+    background: #A87AF2;
     display:flex;
     justify-content: center;
     align-items: center;
 }
 
 .edit-logo p {
-    top:80px;
-    right:20px;
+    top:90px;
+    right:6px;
     position:absolute;
 }
 
 .edit-logo .icon {
-    font-size:30px;
+    width:72.8px;
+    height: 72.8px;
+    background-image:url('../assets/edit-logo.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    left:23px;
+    top: 20px;
 }
 
 .data-content {
     position:absolute; 
     left:20%;
-    top:12rem;
+    top:19rem;
     width:60%;
     height:37rem;
 }
@@ -47,7 +47,7 @@
 
 .log {
     position: relative;
-    background-color:rgb(20, 201, 221);
+    background-image: url("../assets/profile_avatar.png");
     width:72.8px;
     height: 72.8px;
     border-radius: 50%;

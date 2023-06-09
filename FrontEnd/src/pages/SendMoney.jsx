@@ -3,6 +3,7 @@ import { useContext,useEffect,useState } from "react";
 import { getDebitCardApi } from "../api/profile.api";
 import AuthContext from "../context/AuthContext";
 import {useNavigate} from "react-router-dom"
+import send_money from '../styles/send-money.css'
 const SendMoney = () => {
     const navigate = useNavigate()
     const { register, handleSubmit } = useForm();
@@ -33,31 +34,32 @@ const SendMoney = () => {
         if(res.status === 201){
             window.alert("Transferencia exitosa correctamente")
             navigate("/profile/debit")
-        } 
+        }else{
+            window.alert("Error al hacer la transferencia")
+        }
     }
     return (
         <div>
-            <h1>Transferir</h1>
-            <form onSubmit={handleSubmit(onSubmit)}>
-                <div>
-                    <div>
-                        <input placeholder="Numero de targeta del usuario al que quieres transferir"
-                        {...register("user_to_transfer", { required: true })}/>
-                    </div>
-                    <div>
-                        <input placeholder="Cantidad a transferir "
-                        {...register("quantity", { required: true })}/>
-                    </div>
-                    <div>
-                        <input placeholder="Concepto de la transferencia"
-                        {...register("concept", { required: true })}/>
-                    </div>
-                </div>
-                <input type="submit"/>
-            </form>
-            <div>
-                <h3>Saldo actual :{dataDebit?.saldo_actual}</h3>
+            <h1 className='transferir'>Transferir</h1>
+            <div className='form'>
+                <form className='form-send_money' onSubmit={handleSubmit(onSubmit)}>
+                        <div className='form-group'>
+                            <input autoComplete="off" placeholder="Numero de tarjeta del usuario al que quieres transferir"
+                            {...register("user_to_transfer", { required: true })}/>
+                        </div>
+                        <div className='form-group'>
+                            <input autoComplete="off" placeholder="Cantidad a transferir "
+                            {...register("quantity", { required: true })}/>
+                        </div >
+                        <div className='form-group'>
+                            <input autoComplete="off" placeholder="Concepto de la transferencia"
+                            {...register("concept", { required: false })}/>
+                        </div>
+                    <input className='send_money_buttom' type="submit" value='Continuar'/>
+                </form>
             </div>
+
+           
         </div>
     )
 }

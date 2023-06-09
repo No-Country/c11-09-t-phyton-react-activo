@@ -1,0 +1,97 @@
+.credit {
+    position:  absolute;
+    top:20%;
+    left: 80px;
+}
+
+.card {
+    position: absolute;
+    top:30%;
+    width: 40%;
+    height:50%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.card .card_credit {
+    position:relative;
+    background: #A87AF2;
+    width: 466px;
+    height: 289px;
+    border-radius: 34px;
+}
+
+.card_credit .name-title {
+    position: absolute;
+    bottom:30px;
+    color: #000000;
+    font-size: 23px;
+    left: 90px;
+
+}
+
+.card_credit .name-target {
+    position: absolute;
+    bottom:80px;
+    color: #000000;
+    font-size: 23px;
+    left: 90px;
+}
+
+.data_card {
+    width: 466px;
+    height: 110.36px;
+    background: rgba(168, 122, 242, 0.8);
+    border-radius: 33.4437px;
+    position: absolute;
+
+    bottom: -30px;
+
+}
+
+.one_data {
+    position: absolute;
+    width: 33%;
+    border-left: 1px solid;
+    height: 99%;
+    bottom:0px;
+    left:25px;
+}
+
+.one_data img, .third_data img, .second_data img{
+    position: absolute;
+    top:20px;
+    left:40px
+    
+}
+.third_data .action, .second_data .action {
+    bottom:3px;
+}
+.action {
+    position: absolute;
+    bottom: 20px;
+    font-size: 20.0662px;
+    left:25px;
+}
+.second_data {
+    position: absolute;
+    width: 33%;
+    margin-left: 33%;
+    border-left: 1px solid;
+    height: 100%;
+    top:0px;
+
+}
+
+.third_data {
+    position: absolute;
+
+    width: 33%;
+    margin-left: 66%;
+    border-left: 1px solid;
+    height: 100%;
+    top:0px;
+
+}
+
