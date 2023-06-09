@@ -3,7 +3,7 @@ from card.models import Debit
 from django.dispatch import receiver
 from django.db.models.signals import pre_save,post_save
 from django.core.exceptions import ValidationError
-
+from django.contrib.auth.models import User
 class Transferencia(models.Model):
     card_user = models.IntegerField()
     card_user_to_transfer = models.IntegerField()
@@ -15,6 +15,14 @@ class Transferencia(models.Model):
     def __str__(self):
         return f"Transferencia desde el cvv {self.card_user} al cvv {self.card_user_to_transfer}"
 
+
+class Transaction(models.Model):
+    card = models.OneToOneField(Debit,on_delete=models.CASCADE)
+    transactions_user = models.ManyToManyField(Transferencia)
+    
+    def __str__(self):
+        return f'Transacciones del usuario {self.card}'
+    
 @receiver(pre_save, sender=Transferencia)
 def transfer_validation(sender,instance,**kwargs):
     if instance.card_user == instance.card_user_to_transfer:
@@ -25,6 +33,16 @@ def transfer_validation(sender,instance,created,**kwargs):
     if created:
         debit_account_user = Debit.objects.get(numero_tarjeta=instance.card_user)
         debit_account_user_to_transfer = Debit.objects.get(numero_tarjeta=instance.card_user_to_transfer)
+        
+        
+        if Transaction.objects.filter(card=debit_account_user).exists():
+            transaction = Transaction.objects.get(card=debit_account_user)
+            transaction.transactions_user.add(instance)
+            transaction.save()
+        else:
+            transaction_created = Transaction.objects.create(card=debit_account_user)
+            transaction_created.transactions_user.add(instance)
+            transaction_created.save()
 
         if debit_account_user.nombre_titular != None and debit_account_user_to_transfer.nombre_titular != None:
             if debit_account_user.saldo_actual >= instance.quantity:              
@@ -41,3 +59,4 @@ def transfer_validation(sender,instance,created,**kwargs):
                 raise ValidationError("No tienes suficiente dinero")
         else:
             raise ValidationError("No existe tal cuenta")
+    
