@@ -52,7 +52,7 @@
 }
 
 .logup-form .form-group {
-    margin-top:4em;
+    margin-top:3em;
 
 }
 
@@ -86,9 +86,9 @@
     color: #A87AF2;
     
 }
-.container-image {
+.container-image-triangulo {
     position: absolute;
-    background-image: url('../assets/logup-background.png');
+    background-image: url('../assets/logup-brackground.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;  

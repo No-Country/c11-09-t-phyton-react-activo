@@ -6,7 +6,7 @@ const LayoutElement = () => {
     let location = useLocation()
     return (
         <ProfileProvider>
-                {['/logup','/login'].includes(location.pathname) == false ?
+                {['/logup','/'].includes(location.pathname) == false ?
                 <>
                     <Navbar />
                     <Outlet/>

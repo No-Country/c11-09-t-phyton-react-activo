@@ -17,7 +17,7 @@ const Navbar = () => {
                 <img  className='logo' src={Logo} alt='Logo de wowlet'/>
             </div>
             { user ? <ul className='navbar_link'>
-            <Link className="link-navbar" to="/">Inicio</Link>
+            <Link className="link-navbar" to="/home">Inicio</Link>
             <Link className="link-navbar" to="/profile">{profile.username}</Link>
             <Link className="link-navbar" to="/actividad">Historial Crediticio</Link>
             <Link className="link-navbar" to="/send-money">Enviar Dinero</Link>
@@ -26,8 +26,7 @@ const Navbar = () => {
             </ul> : 
              
             <ul className='navbar_link'>
-            <Link className="link-navbar" to="/">Inicio</Link>
-            <Link className="link-navbar" to="/login">Login</Link>
+            <Link className="link-navbar" to="/">Login</Link>
             <Link className="link-navbar" to="/logup">Logup</Link>
 
             </ul> 
